@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barakahos — Case Study by Amanda</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+
+    /* Custom Slow-Motion Animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1) translate(-50%, 0); }
+      50% { opacity: 0.7; transform: scale(1.1) translate(-50%, -10px); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    .animate-ambient-glow {
+      animation: pulseGlow 10s ease-in-out infinite;
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-[#FAF6F4] text-stone-700 antialiased selection:bg-rose-200 selection:text-rose-900 relative overflow-x-hidden">
+
+  <!-- Dynamic Ambient Light Effect (Slow Motion Glow) -->
+  <div class="fixed top-[-10%] left-1/2 w-[600px] sm:w-[800px] h-[450px] bg-gradient-to-tr from-amber-200/50 via-rose-200/40 to-amber-100/30 blur-[130px] pointer-events-none -z-10 rounded-full animate-ambient-glow"></div>
+
+  <!-- Navbar / Back Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/80 backdrop-blur-md border-b border-rose-100/80 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="../index.html" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-stone-700 hover:text-rose-600 transition-all transform hover:-translate-x-1">
+        <span>&larr;</span> Back to Home
+      </a>
+      <a href="../index.html" class="text-xl font-bold tracking-tight text-stone-900 font-serif group">
+        Amanda<span class="text-rose-500 inline-block transition-transform duration-300 group-hover:scale-150">.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Case Study Header -->
+  <header class="pt-36 pb-8 px-6 max-w-4xl mx-auto text-center fade-in-up">
+    <span class="inline-block text-xs font-mono font-bold text-rose-500 bg-rose-100/80 px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm hover:scale-105 transition-transform">
+      Case Study — 03
+    </span>
+    <h1 class="text-4xl sm:text-6xl font-serif font-bold text-stone-900 mt-4 leading-tight">Barakahos</h1>
+    <p class="text-lg sm:text-xl text-rose-600 font-medium mt-2">Mobile UI/UX Design Concept</p>
+    
+    <!-- Award Badge -->
+    <div class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-amber-100 via-amber-50 to-amber-100 border border-amber-300/80 text-amber-900 text-xs sm:text-sm px-5 py-2 rounded-full font-bold shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+      🏆 2nd Place — HIMASI UMRI Design Competition
+    </div>
+  </header>
+
+  <!-- HERO SECTION: PHONE MOCKUP WITH SLOW-MOTION FLOATING ANIMATION -->
+  <section class="max-w-5xl mx-auto px-6 mb-16 flex flex-col items-center fade-in-up">
+    <div class="animate-float">
+      <!-- Phone Frame Styling -->
+      <div class="relative w-[260px] sm:w-[280px] bg-stone-900 p-3 rounded-[40px] shadow-2xl ring-1 ring-stone-800/50 hover:shadow-rose-200/50 transition-shadow duration-500 group">
+        
+        <!-- Phone Camera Notch -->
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-4 bg-stone-900 rounded-full z-20 flex items-center justify-center">
+          <div class="w-2.5 h-2.5 bg-stone-800 rounded-full"></div>
+        </div>
+
+        <!-- Image Container (Smartphone Screen Aspect Ratio) -->
+        <div class="relative overflow-hidden rounded-[32px] aspect-[9/19.5] bg-stone-100 cursor-pointer" onclick="openModal('../images/barakahos-hero.jpg', 'Dokumentasi Utama Konsep Desain Aplikasi Mobile Barakahos', 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop')">
+          <img 
+            src="../images/barakahos-hero.jpg" 
+            alt="Barakahos Mobile UI Concept" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop'"
+          />
+          <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1 text-center p-4 backdrop-blur-[2px]">
+            🔍 Klik untuk memperbesar
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="text-xs sm:text-sm text-stone-500 italic text-center mt-6 font-medium">
+      Tampilan Antarmuka Aplikasi Mobile Barakahos (Mobile View)
+    </p>
+  </section>
+
+  <!-- Project Overview Grid (Role & Tools) -->
+  <section class="max-w-4xl mx-auto px-6 mb-16 fade-in-up">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-rose-100/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-sm">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100/80 text-rose-600 flex items-center justify-center font-bold shrink-0 shadow-inner">
+          👤
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">My Role</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">UI/UX Designer</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100/80 text-rose-600 flex items-center justify-center font-bold shrink-0 shadow-inner">
+          🛠️
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">Tools & Prototype</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">Figma · Canva</p>
+          <!-- LINK FIGMA INTERAKTIF -->
+          <a href="https://www.figma.com/design/2uZSvwfXoyLy6ognTTrAxN/BarakahApp?node-id=0-1&t=JbffIKLAIypyBIbR-1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-xs font-bold text-rose-600 hover:text-rose-700 underline underline-offset-4 group">
+            <span>🎨 View Figma Design Project</span>
+            <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Content Section -->
+  <main class="max-w-3xl mx-auto px-6 space-y-16 pb-24">
+    
+    <!-- Overview -->
+    <section class="fade-in-up">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Overview</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-4">About the Project</h2>
+      <p class="text-stone-700 leading-relaxed text-base sm:text-lg">
+        Barakahos is a mobile UI/UX design concept created for a design competition, focusing on intuitive navigation, clear visual hierarchy, and a seamless user experience.
+      </p>
+    </section>
+
+    <!-- The Challenge & The Solution -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in-up">
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Challenge</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Clear & Engaging UI</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          The challenge was to create a mobile interface that could deliver information clearly while maintaining an engaging and consistent visual experience.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Solution</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">User-Centered Approach</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          I developed a user-centered interface with a clear navigation structure, organized content, and a visual design that makes key information easy to understand and access.
+        </p>
+      </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Design Process</span>
+      <h2 class="text-2xl font-serif font-bold text-stone-900 mt-3 mb-6">Workflow Step-by-Step</h2>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center">
+        <div class="p-3.5 rounded-2xl bg-[#FAF6F4] border border-rose-100/80 hover:bg-rose-50/50 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">01</span>
+          <p class="font-bold text-stone-900 text-xs sm:text-sm">Concept</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-[#FAF6F4] border border-rose-100/80 hover:bg-rose-50/50 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">02</span>
+          <p class="font-bold text-stone-900 text-xs sm:text-sm">User Flow</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-[#FAF6F4] border border-rose-100/80 hover:bg-rose-50/50 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">03</span>
+          <p class="font-bold text-stone-900 text-xs sm:text-sm">Wireframe</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-[#FAF6F4] border border-rose-100/80 hover:bg-rose-50/50 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">04</span>
+          <p class="font-bold text-stone-900 text-xs sm:text-sm">UI Design</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-[#FAF6F4] border border-rose-100/80 hover:bg-rose-50/50 hover:border-rose-200 transition-all duration-300 hover:-translate-y-1 col-span-2 sm:col-span-1">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">05</span>
+          <p class="font-bold text-stone-900 text-xs sm:text-sm">Prototype</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="fade-in-up">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Key Features</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">Core Highlights Of The App</h2>
+      
+      <ul class="space-y-4">
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Intuitive navigation</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Clear information hierarchy</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Consistent visual components</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">User-friendly interface</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Interactive prototype</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Final Result & What I Learned -->
+    <section class="space-y-6 fade-in-up">
+      <div class="p-8 rounded-3xl bg-amber-50/80 border border-amber-200 hover:shadow-md transition-shadow duration-300">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Final Result 🚀</h3>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          The final design delivered a clean and intuitive mobile experience with a strong visual identity.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="inline-flex items-center gap-2 bg-amber-200/80 border border-amber-400 text-amber-950 text-xs px-3.5 py-1.5 rounded-lg font-bold">
+            🏆 2nd Place — HIMASI UMRI Design Competition
+          </div>
+          <!-- CTA FIGMA LINK BUTTON -->
+          <a href="https://www.figma.com/design/2uZSvwfXoyLy6ognTTrAxN/BarakahApp?node-id=0-1&t=JbffIKLAIypyBIbR-1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs px-4 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-sm">
+            <span>🎨 Open Figma Design</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">What I Learned 💡</h3>
+        <p class="text-stone-700 text-sm leading-relaxed">
+          This project helped me explore how visual design, information hierarchy, and user flow can work together to create a more intuitive mobile experience.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation Next/Previous Project -->
+  <section class="border-t border-rose-200 py-12 bg-white px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Previous Case Study</p>
+    <a href="siputra-tarung.html" class="text-2xl font-serif font-bold text-stone-900 hover:text-rose-600 transition duration-300 inline-block hover:scale-105">
+      &larr; SIPUTRA Tarung Case Study
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-stone-950 border-t border-stone-900 px-6 text-stone-400 text-xs font-medium text-center">
+    © 2026 Amanda. Designed with purpose.
+  </footer>
+
+  <!-- MODAL / POP-UP LIGHTBOX ELEMENT -->
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300" onclick="closeModal()">
+    <div class="relative max-w-sm sm:max-w-md w-full bg-white rounded-3xl overflow-hidden shadow-2xl border border-stone-200" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-stone-900/70 hover:bg-stone-900 text-white rounded-full flex items-center justify-center text-lg font-bold transition">
+        ✕
+      </button>
+      <!-- Modal Content Image -->
+      <div class="max-h-[80vh] overflow-y-auto bg-stone-100 flex items-center justify-center p-4">
+        <img id="modalImage" src="" alt="Popup Preview" class="max-w-full h-auto max-h-[70vh] object-contain rounded-2xl shadow-md">
+      </div>
+      <!-- Modal Caption -->
+      <div class="p-4 bg-white text-center border-t border-stone-100">
+        <p id="modalCaption" class="text-sm font-semibold text-stone-800"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT UNTUK FUNGSI POP-UP LIGHTBOX -->
+  <script>
+    function openModal(imageSrc, captionText, fallbackSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const modalCap = document.getElementById('modalCaption');
+
+      modalImg.onerror = function() {
+        if (fallbackSrc) {
+          this.src = fallbackSrc;
+        }
+      };
+      
+      modalImg.src = imageSrc;
+      modalCap.textContent = captionText;
+      
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Kunci scroll latar belakang
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto'; // Aktifkan kembali scroll
+    }
+
+    // Menutup modal dengan tombol Escape (ESC)
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>

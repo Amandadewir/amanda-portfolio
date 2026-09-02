@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPUTRA Tarung — Case Study by Amanda</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#FAF6F4] text-stone-700 antialiased selection:bg-rose-200 selection:text-rose-900 relative overflow-x-hidden">
+
+  <!-- Ambient Light Effect -->
+  <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-rose-200/40 via-pink-100/30 to-amber-100/20 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+
+  <!-- Navbar / Back Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/90 backdrop-blur-md border-b border-rose-100/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="../index.html" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-stone-700 hover:text-rose-600 transition">
+        <span>&larr;</span> Back to Home
+      </a>
+      <a href="../index.html" class="text-xl font-bold tracking-tight text-stone-900 font-serif">Amanda<span class="text-rose-500">.</span></a>
+    </div>
+  </nav>
+
+  <!-- Case Study Header -->
+  <header class="pt-36 pb-8 px-6 max-w-4xl mx-auto text-center">
+    <span class="text-xs font-mono font-bold text-rose-500 bg-rose-100/80 px-3 py-1 rounded-full uppercase tracking-wider">Case Study — 02</span>
+    <h1 class="text-4xl sm:text-6xl font-serif font-bold text-stone-900 mt-4 leading-tight">SIPUTRA Tarung</h1>
+    <p class="text-lg sm:text-xl text-rose-600 font-medium mt-2 mb-6">Website Redesign & UX Improvement</p>
+    
+    <!-- Link Website Live -->
+    <a href="https://siputra.tulungagung.go.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-rose-500 text-white font-bold text-xs uppercase tracking-wider hover:bg-rose-600 transition shadow-md shadow-rose-200">
+      <span>🌐 Visit Live Website</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+    </a>
+  </header>
+
+  <!-- HIGHLIGHT DOCUMENTATION GALLERY (KLIK UNTUK CLOSE-UP POPUP) -->
+  <section class="max-w-5xl mx-auto px-6 mb-12">
+    >
+      <div class="relative overflow-hidden rounded-2xl">
+        <img 
+          src="../images/siputra-hero.png" 
+          alt="SIPUTRA Tarung Highlight Documentation" 
+          class="w-full h-auto max-h-[500px] object-cover rounded-2xl group-hover:scale-105 transition duration-500"
+          onerror="this.onerror=null; this.src='../images/siputra-hero.jpg';"
+        />
+      </div>
+      <p class="text-xs sm:text-sm text-stone-500 italic text-center mt-3 font-medium">
+        Dokumentasi Utama: Antarmuka Redesain SIPUTRA Tarung (Klik untuk memperbesar)
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Overview Grid (Role & Tools) -->
+  <section class="max-w-4xl mx-auto px-6 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-white/80 rounded-3xl border border-rose-100 shadow-sm text-sm">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold shrink-0">
+          👤
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">My Role</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">UI/UX Designer & Web Developer</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold shrink-0">
+          🛠️
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">Tools</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">Figma · Laravel · Vue.js · Inertia.js · Tailwind CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Content Section -->
+  <main class="max-w-3xl mx-auto px-6 space-y-16 pb-24">
+    
+    <!-- Overview -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Overview</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-4">About the Project</h2>
+      <p class="text-stone-700 leading-relaxed text-base sm:text-lg mb-4">
+        SIPUTRA Tarung is a government website redesign project focused on improving the structure, usability, and visual experience of the platform.
+      </p>
+      
+      <div class="p-4 rounded-2xl bg-white border border-rose-100 shadow-sm flex items-center justify-between flex-wrap gap-3">
+        <span class="text-xs font-bold text-stone-600">Official Website URL:</span>
+        <a href="https://siputra.tulungagung.go.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-rose-600 hover:underline flex items-center gap-1 font-mono">
+          siputra.tulungagung.go.id &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- The Challenge & The Solution -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Challenge</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Complex Interface</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          The existing website had a complex information structure and interface that could make it difficult for users to find and understand the information they needed.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Solution</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Intuitive Design</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          I redesigned the interface by improving the information hierarchy, navigation structure, and visual consistency to create a clearer and more intuitive user experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Design Process</span>
+      <h2 class="text-2xl font-serif font-bold text-stone-900 mt-3 mb-6">Workflow Step-by-Step</h2>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">01</span>
+          <p class="font-bold text-stone-900 text-sm">Existing Website</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">02</span>
+          <p class="font-bold text-stone-900 text-sm">UX Analysis</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">03</span>
+          <p class="font-bold text-stone-900 text-sm">Information Architecture</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">04</span>
+          <p class="font-bold text-stone-900 text-sm">Wireframe</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">05</span>
+          <p class="font-bold text-stone-900 text-sm">UI Design</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">06</span>
+          <p class="font-bold text-stone-900 text-sm">Development</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Improvements WITH POP-UP INTERACTION -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Key Improvements</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-2">What Improved In The Redesign</h2>
+      <p class="text-xs sm:text-sm text-stone-500 mb-6">Klik pada kartu di bawah untuk melihat rincian close-up & breakdown perbaikan.</p>
+      
+      <div class="grid grid-cols-1 gap-4">
+        
+        <!-- CARD 1 -->
+        <div 
+          onclick="openDetailModal('Hierarchy Breakdown', 'Penyusunan Ulang Struktur Informasi', 'Memperbaiki susunan tata letak informasi utama agar pengguna publik maupun pemangku kepentingan dapat menemukan data penting tanpa kebingungan.', '../images/siputra-desktop.png')"
+          class="p-5 rounded-2xl bg-white border border-rose-100 shadow-sm hover:border-rose-400 hover:shadow-md transition cursor-pointer flex items-center justify-between group"
+        >
+          <div class="flex items-center gap-4">
+            <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-lg shrink-0 group-hover:bg-rose-500 group-hover:text-white transition">📊</span>
+            <div>
+              <h3 class="font-bold text-stone-900 text-base group-hover:text-rose-600 transition">Improved Information Hierarchy</h3>
+              <p class="text-xs text-stone-500">Menata ulang pengelompokan menu dan visual tata letak.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-rose-500 group-hover:translate-x-1 transition">&rarr;</span>
+        </div>
+
+        <!-- CARD 2 -->
+        <div 
+          onclick="openDetailModal('Navigation System', 'Navigasi Ringkas & Aksesibel', 'Menghilangkan kedalaman menu berlebih dan mempermudah akses antar halaman utama melalui header yang konsisten.', '../images/siputra-hero.png')"
+          class="p-5 rounded-2xl bg-white border border-rose-100 shadow-sm hover:border-rose-400 hover:shadow-md transition cursor-pointer flex items-center justify-between group"
+        >
+          <div class="flex items-center gap-4">
+            <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-lg shrink-0 group-hover:bg-rose-500 group-hover:text-white transition">🧩</span>
+            <div>
+              <h3 class="font-bold text-stone-900 text-base group-hover:text-rose-600 transition">Simplified Navigation</h3>
+              <p class="text-xs text-stone-500">Struktur menu dibuat lebih simpel dan mudah dijangkau.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-rose-500 group-hover:translate-x-1 transition">&rarr;</span>
+        </div>
+
+        <!-- CARD 3 -->
+        <div 
+          onclick="openDetailModal('Layout Design', 'Redesain Tata Letak Halaman', 'Setiap bagian halaman dirancang dengan prinsip white space yang seimbang agar informasi terasa lega dan nyaman dibaca.', '../images/siputra-desktop.png')"
+          class="p-5 rounded-2xl bg-white border border-rose-100 shadow-sm hover:border-rose-400 hover:shadow-md transition cursor-pointer flex items-center justify-between group"
+        >
+          <div class="flex items-center gap-4">
+            <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-lg shrink-0 group-hover:bg-rose-500 group-hover:text-white transition">📐</span>
+            <div>
+              <h3 class="font-bold text-stone-900 text-base group-hover:text-rose-600 transition">Redesigned Page Layouts</h3>
+              <p class="text-xs text-stone-500">Penyesuaian tata letak card, tabel, dan komponen visual.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-rose-500 group-hover:translate-x-1 transition">&rarr;</span>
+        </div>
+
+        <!-- CARD 4 -->
+        <div 
+          onclick="openDetailModal('Responsive Experience', 'Aksesibilitas Seluler (Mobile)', 'Mengoptimalkan seluruh elemen UI agar otomatis menyesuaikan dengan layar smartphone dan tablet secara responsif.', '../images/siputra-mobile.png')"
+          class="p-5 rounded-2xl bg-white border border-rose-100 shadow-sm hover:border-rose-400 hover:shadow-md transition cursor-pointer flex items-center justify-between group"
+        >
+          <div class="flex items-center gap-4">
+            <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-lg shrink-0 group-hover:bg-rose-500 group-hover:text-white transition">📱</span>
+            <div>
+              <h3 class="font-bold text-stone-900 text-base group-hover:text-rose-600 transition">Responsive Mobile Interface</h3>
+              <p class="text-xs text-stone-500">Tampilan mobile friendly dan nyaman diakses dari smartphone.</p>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-rose-500 group-hover:translate-x-1 transition">&rarr;</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Additional Gallery (SHOWCASE VIEW WITH CLOSEUP CLICK) -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Gallery</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">Interface Showcase</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Tampilan Desktop -->
+        <div 
+          onclick="openImageModal('../images/siputra-desktop.png', 'Desktop View: Layout & Data Structure')" 
+          class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-2 cursor-pointer group hover:border-rose-400 transition"
+        >
+          <div class="relative overflow-hidden rounded-xl">
+            <img 
+              src="../images/siputra-desktop.png" 
+              alt="Desktop Interface" 
+              class="w-full h-48 object-cover rounded-xl group-hover:scale-105 transition duration-500"
+              onerror="this.onerror=null; this.src='../images/siputra-desktop.jpg';"
+            />
+            <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold">
+              🔍 Klik untuk memperbesar
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 italic text-center py-2 font-medium">Desktop View: Layout & Data Structure</p>
+        </div>
+
+        <!-- Tampilan Mobile -->
+        <div 
+          onclick="openImageModal('../images/siputra-mobile.png', 'Mobile View: Responsive Layout')" 
+          class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-2 cursor-pointer group hover:border-rose-400 transition"
+        >
+          <div class="relative overflow-hidden rounded-xl">
+            <img 
+              src="../images/siputra-mobile.png" 
+              alt="Mobile Interface" 
+              class="w-full h-48 object-cover rounded-xl group-hover:scale-105 transition duration-500"
+              onerror="this.onerror=null; this.src='../images/siputra-mobile.jpg';"
+            />
+            <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold">
+              🔍 Klik untuk memperbesar
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 italic text-center py-2 font-medium">Mobile View: Responsive Layout</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Result & What I Learned -->
+    <section class="space-y-6">
+      <div class="p-8 rounded-3xl bg-rose-50/70 border border-rose-200">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Final Result 🚀</h3>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          The redesign provides a cleaner and more structured interface, making information easier to navigate while creating a more modern digital experience for users.
+        </p>
+        <a href="https://siputra.tulungagung.go.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-rose-600 hover:text-rose-700">
+          Visit Live Website <span class="ml-1">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">What I Learned 💡</h3>
+        <p class="text-stone-700 text-sm leading-relaxed">
+          This project strengthened my understanding of information architecture and taught me how to balance user needs, content complexity, and technical implementation in a real-world website.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation Next Project -->
+  <section class="border-t border-rose-200 py-12 bg-white px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Previous Case Study</p>
+    <a href="pintarujian.html" class="text-2xl font-serif font-bold text-stone-900 hover:text-rose-600 transition">
+      &larr; PintarUjian Case Study
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-stone-950 border-t border-stone-900 px-6 text-stone-400 text-xs font-medium text-center">
+    © 2026 Amanda. Designed with purpose.
+  </footer>
+
+  <!-- ==================== POP-UP MODAL CONTAINER ==================== -->
+  
+  <!-- 1. POPUP DETAIL BREAKDOWN (SAMA SEPERTI PINTARUJIAN) -->
+  <div id="detailModal" class="fixed inset-0 z-50 hidden bg-stone-900/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative border border-rose-100 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeDetailModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-100 text-stone-600 hover:bg-rose-500 hover:text-white transition flex items-center justify-center font-bold">
+        ✕
+      </button>
+
+      <span id="modalBadge" class="text-xs font-mono font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded inline-block mb-3">
+        Breakdown
+      </span>
+      <h3 id="modalTitle" class="text-2xl font-serif font-bold text-stone-900 mb-2">Title</h3>
+      <p id="modalDescription" class="text-stone-600 text-sm leading-relaxed mb-6">Description text...</p>
+      
+      <!-- Close-up Preview Image inside Modal -->
+      <div class="rounded-2xl overflow-hidden border border-rose-100 bg-stone-50 p-2">
+        <img id="modalImage" src="" alt="Close up" class="w-full h-auto max-h-[350px] object-cover rounded-xl" />
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. POPUP LIGHTBOX IMAGE CLOSE-UP -->
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-stone-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full text-center">
+      <button onclick="closeImageModal()" class="absolute -top-10 right-0 text-white hover:text-rose-400 text-sm font-bold bg-white/10 px-4 py-1.5 rounded-full border border-white/20 transition">
+        ✕ Close
+      </button>
+      <img id="lightboxImg" src="" class="w-full h-auto max-h-[80vh] object-contain rounded-2xl mx-auto border border-white/10 shadow-2xl" />
+      <p id="lightboxCaption" class="text-white/80 text-xs sm:text-sm mt-4 font-medium"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript for Pop-up Controls -->
+  <script>
+    // Functional Pop-up Detail
+    function openDetailModal(badge, title, description, imageSrc) {
+      document.getElementById('modalBadge').innerText = badge;
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDescription').innerText = description;
+      document.getElementById('modalImage').src = imageSrc;
+      
+      document.getElementById('detailModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+
+    function closeDetailModal() {
+      document.getElementById('detailModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Functional Pop-up Image Close-up
+    function openImageModal(imageSrc, caption) {
+      document.getElementById('lightboxImg').src = imageSrc;
+      document.getElementById('lightboxCaption').innerText = caption;
+      
+      document.getElementById('imageModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeImageModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close Modal when clicking outside the box
+    window.onclick = function(event) {
+      const detailModal = document.getElementById('detailModal');
+      const imageModal = document.getElementById('imageModal');
+      if (event.target === detailModal) closeDetailModal();
+      if (event.target === imageModal) closeImageModal();
+    };
+  </script>
+
+</body>
+</html>

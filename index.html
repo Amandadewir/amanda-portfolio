@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda — Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#FAF6F4] text-stone-700 antialiased selection:bg-rose-200 selection:text-rose-900 relative overflow-x-hidden">
+
+  <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[300px] sm:w-[700px] h-[300px] sm:h-[450px] bg-gradient-to-tr from-rose-200/40 via-pink-100/30 to-amber-100/20 blur-[90px] sm:blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/90 backdrop-blur-md border-b border-rose-100/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight text-stone-900 font-serif">
+        Amanda<span class="text-rose-500">.</span>
+      </a>
+      
+      <div class="hidden md:flex space-x-6 lg:space-x-8 text-xs uppercase tracking-wider font-bold text-stone-700">
+        <a href="#about" class="hover:text-rose-600 transition">About</a>
+        <a href="#philosophy" class="hover:text-rose-600 transition">Philosophy</a>
+        <a href="#services" class="hover:text-rose-600 transition">What I Do</a>
+        <a href="#projects" class="hover:text-rose-600 transition">Projects</a>
+        <a href="#experience" class="hover:text-rose-600 transition">Experience</a>
+        <a href="#certifications" class="hover:text-rose-600 transition">Certifications</a>
+        <a href="#skills" class="hover:text-rose-600 transition">Skills</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- LET'S CONNECT DROPDOWN (DESKTOP) -->
+        <div class="relative hidden sm:inline-block text-left">
+          <details class="group">
+            <summary class="list-none cursor-pointer inline-flex items-center justify-center px-5 py-2 sm:px-6 sm:py-2.5 text-xs uppercase tracking-wider font-bold text-white bg-rose-500 rounded-full hover:bg-rose-600 transition shadow-md shadow-rose-200 select-none">
+              Let's Connect
+              <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            
+            <div class="absolute right-0 mt-2 w-52 bg-white rounded-2xl shadow-xl border border-rose-100 py-2 z-50">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amaandaaa.rmdh@gmail.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-bold text-stone-700 hover:bg-rose-50 hover:text-rose-600 transition">
+                <span>✉️</span> Gmail
+              </a>
+              <a href="https://www.instagram.com/manda.ramadhan_/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-bold text-stone-700 hover:bg-rose-50 hover:text-rose-600 transition border-t border-stone-100">
+                <span>📸</span> Instagram
+              </a>
+              <a href="https://www.linkedin.com/in/amanda-dewi-ramadhani-b712a6339" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-bold text-stone-700 hover:bg-rose-50 hover:text-rose-600 transition border-t border-stone-100">
+                <span>💼</span> LinkedIn
+              </a>
+            </div>
+          </details>
+        </div>
+        
+        <button id="menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-stone-700 hover:text-rose-600 focus:outline-none" aria-label="Toggle Navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#FAF6F4] border-b border-rose-100 px-6 py-4 space-y-3 text-xs uppercase tracking-wider font-bold text-stone-700">
+      <a href="#about" class="block hover:text-rose-600 transition py-1">About</a>
+      <a href="#philosophy" class="block hover:text-rose-600 transition py-1">Philosophy</a>
+      <a href="#services" class="block hover:text-rose-600 transition py-1">What I Do</a>
+      <a href="#projects" class="block hover:text-rose-600 transition py-1">Projects</a>
+      <a href="#experience" class="block hover:text-rose-600 transition py-1">Experience</a>
+      <a href="#certifications" class="block hover:text-rose-600 transition py-1">Certifications</a>
+      <a href="#skills" class="block hover:text-rose-600 transition py-1">Skills</a>
+      <div class="pt-2 border-t border-rose-100 flex flex-col gap-2">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amaandaaa.rmdh@gmail.com" target="_blank" rel="noopener noreferrer" class="block text-rose-600 py-1">✉️ Gmail</a>
+        <a href="https://www.instagram.com/manda.ramadhan_/" target="_blank" class="block text-rose-600 py-1">📸 Instagram</a>
+        <a href="https://www.linkedin.com/in/amanda-dewi-ramadhani-b712a6339" target="_blank" class="block text-rose-600 py-1">💼 LinkedIn</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex items-center pt-28 sm:pt-36 pb-16 sm:pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center w-full">
+      
+      <!-- KOLOM KIRI HERO -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-rose-100/80 border border-rose-300/70 text-rose-800 text-[11px] sm:text-xs font-bold tracking-wide mb-6 shadow-sm">
+          <span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+          <span>UI/UX & Web Developer</span>
+        </div>
+        
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif text-stone-900 tracking-tight leading-[1.2] mb-6">
+          Crafting <span class="italic text-rose-500 font-semibold relative inline-block">thoughtful<span class="absolute bottom-1 left-0 w-full h-2 bg-rose-200/60 -z-10 rounded"></span></span> digital experiences & products.
+        </h1>
+        
+        <p class="text-base sm:text-lg lg:text-xl text-stone-700 font-normal leading-relaxed mb-8 sm:mb-10 max-w-xl">
+          I'm <span class="font-bold text-stone-900 bg-rose-100/70 px-1.5 py-0.5 rounded">Amanda</span> — a UI/UX Designer & Web Developer based in Indonesia. I enjoy turning complex problems into <span class="font-semibold text-rose-600">clean, functional</span>, and meaningful digital experiences.
+        </p>
+
+        <div class="flex flex-wrap gap-3 sm:gap-4">
+          <a href="#projects" class="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-rose-600 transition-all duration-300 shadow-lg shadow-stone-900/10">Explore Portfolio</a>
+          
+          <!-- TOMBOL DOWNLOAD CV (Opsi Google Drive / Jalur File) -->
+          <!-- Gantilah LINK_GOOGLE_DRIVE_ANDA jika menggunakan Google Drive, atau gunakan "CV_Amanda.pdf" jika file sudah sejajar dengan index.html -->
+          <a href="CV_Amanda.pdf" download="CV_Amanda.pdf" target="_blank" class="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white border-2 border-rose-200 text-stone-900 font-bold text-xs uppercase tracking-wider hover:bg-rose-50 transition-all duration-300 shadow-sm">Download CV</a>
+        </div>
+      </div> <!-- Tag Penutup Kolom Kiri -->
+
+      <!-- KOLOM KANAN HERO (FOTO) -->
+      <div class="lg:col-span-5 flex justify-center mt-6 lg:mt-0">
+        <div class="relative w-full max-w-[280px] sm:max-w-sm">
+          <div class="absolute -inset-1 bg-gradient-to-r from-rose-300 to-pink-300 rounded-[2.5rem] blur-xl opacity-70"></div>
+          
+          <div class="relative bg-white/80 backdrop-blur-md rounded-[2.5rem] p-3 sm:p-4 shadow-2xl border border-white">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden relative group bg-rose-50">
+              <img 
+                src="images/foto-amanda.jpeg" 
+                alt="Amanda - UI/UX Designer" 
+                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop'"
+              />
+              
+              <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/90 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-rose-100 shadow-lg">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="font-bold text-stone-900 text-xs sm:text-sm">Amanda</p>
+                    <p class="text-rose-600 font-semibold text-[10px] sm:text-xs">UI/UX & Web Developer</p>
+                  </div>
+                  <span class="px-2.5 py-0.5 sm:px-3 sm:py-1 bg-rose-500 text-white rounded-full font-bold text-[10px] sm:text-xs shadow-sm">PRO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-8 sm:py-12 bg-white/60 border-y border-rose-100/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+      <div>
+        <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-stone-900">3+</h3>
+        <p class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-wider mt-1">Featured Projects</p>
+      </div>
+      <div>
+        <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-stone-900">BNSP</h3>
+        <p class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-wider mt-1">National Certification</p>
+      </div>
+      <div>
+        <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-stone-900">PUPR</h3>
+        <p class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-wider mt-1">Internship Experience</p>
+      </div>
+      <div>
+        <h3 class="text-2xl sm:text-3xl font-serif font-extrabold text-stone-900">100%</h3>
+        <p class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-wider mt-1">Dedication</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 sm:py-24 bg-white border-b border-rose-100 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+      <div class="md:col-span-5">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">About Me</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-4 leading-tight">
+          Design with <span class="text-rose-500 underline decoration-rose-200 decoration-wavy decoration-2">purpose</span>.<br />Build with intention.
+        </h2>
+      </div>
+      <div class="md:col-span-7 space-y-4 sm:space-y-6 text-stone-700 font-normal leading-relaxed text-sm sm:text-lg">
+        <p>
+          I'm <strong class="text-stone-900 font-semibold">Amanda</strong>, an Information Technology student with a deep passion for combining design aesthetics with technical execution.
+        </p>
+        <p>
+          I specialize in bridging the gap between <span class="bg-rose-50 text-rose-800 font-medium px-2 py-0.5 rounded">user needs</span> and <span class="bg-stone-100 text-stone-800 font-medium px-2 py-0.5 rounded">business goals</span> to create digital products that are not only visually engaging, but also highly intuitive.
+        </p>
+        <p>
+          From initial wireframes and user research to coding interactive web interfaces, I thrive in turning raw concepts into polished, real-world digital solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="philosophy" class="py-16 sm:py-24 px-4 sm:px-6 bg-[#FAF6F4]">
+    <div class="max-w-6xl mx-auto">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-100/70 px-3 py-1 rounded-md">Design Philosophy</span>
+      <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3 mb-6 sm:mb-8">Design philosophy & impact</h2>
+      <div class="max-w-3xl space-y-4 sm:space-y-6 text-stone-700 font-normal leading-relaxed text-base sm:text-xl">
+        <p class="p-5 sm:p-6 bg-white/80 rounded-2xl border-l-4 border-rose-500 shadow-sm">
+          I believe <strong class="text-stone-900">good design is invisible</strong>. It should simplify complexity, eliminate friction, and feel entirely natural to the user.
+        </p>
+        <p>
+          My approach combines <span class="font-semibold text-rose-600">user-centered thinking</span>, visual clarity, and clean front-end code to ensure every interaction feels intentional and effortless.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 sm:mb-16">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md">What I Do</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3">From ideas to interfaces.</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 hover:border-rose-400 hover:shadow-lg transition duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-rose-200/60 text-rose-600 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">✨</div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-3">UI/UX Design</h3>
+          <p class="text-stone-700 text-sm leading-relaxed font-normal">Research, user flows, wireframing, high-fidelity prototyping, and crafting intuitive interfaces.</p>
+        </div>
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 hover:border-rose-400 hover:shadow-lg transition duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-rose-200/60 text-rose-600 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">💻</div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-3">Web Development</h3>
+          <p class="text-stone-700 text-sm leading-relaxed font-normal">Transforming designs into responsive, fast, and fully functional modern web applications.</p>
+        </div>
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 hover:border-rose-400 hover:shadow-lg transition duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-rose-200/60 text-rose-600 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">🎨</div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-3">Design Systems</h3>
+          <p class="text-stone-700 text-sm leading-relaxed font-normal">Building scalable design libraries, color systems, and reusable component ecosystems.</p>
+        </div>
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 hover:border-rose-400 hover:shadow-lg transition duration-300 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-rose-200/60 text-rose-600 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">💡</div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 mb-3">Problem Solving</h3>
+          <p class="text-stone-700 text-sm leading-relaxed font-normal">Analyzing user feedback and business requirements to deliver practical visual solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 sm:py-24 bg-[#FAF6F4] px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 sm:mb-16">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-100/70 px-3 py-1 rounded-md">Selected Projects</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3">Things I've built & designed.</h2>
+        <p class="text-stone-700 font-normal mt-2 text-sm sm:text-base">Featured case studies showcasing problem-solving through design and code.</p>
+      </div>
+
+      <div class="space-y-6 sm:space-y-8">
+        <a href="projects/pintarujian.html" class="block p-6 sm:p-10 rounded-3xl bg-white border border-rose-100 hover:shadow-xl hover:border-rose-300 transition duration-500 group cursor-pointer">
+          <div class="max-w-3xl space-y-3 sm:space-y-4">
+            <span class="text-xs font-mono font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded inline-block">01 — PintarUjian</span>
+            <div class="flex gap-2 text-xs font-bold text-stone-500 uppercase tracking-wider">
+              <span class="text-rose-600">Web Development</span> · <span>UI/UX</span>
+            </div>
+            <h3 class="text-xl sm:text-3xl font-serif font-bold text-stone-900 group-hover:text-rose-600 transition">PintarUjian Platform</h3>
+            <p class="text-stone-700 text-sm sm:text-base font-normal leading-relaxed">A specialized web-based tryout platform engineered for elementary students. Designed to streamline exam preparation with an engaging, distraction-free user interface.</p>
+            <div class="pt-2 sm:pt-4">
+              <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-rose-600 group-hover:text-rose-700">
+                View Case Study <span class="ml-1 group-hover:translate-x-1.5 transition-transform">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/siputra-tarung.html" class="block p-6 sm:p-10 rounded-3xl bg-white border border-rose-100 hover:shadow-xl hover:border-rose-300 transition duration-500 group cursor-pointer">
+          <div class="max-w-3xl space-y-3 sm:space-y-4">
+            <span class="text-xs font-mono font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded inline-block">02 — SIPUTRA Tarung</span>
+            <div class="flex gap-2 text-xs font-bold text-stone-500 uppercase tracking-wider">
+              <span class="text-rose-600">UI/UX Redesign</span> · <span>Information Architecture</span>
+            </div>
+            <h3 class="text-xl sm:text-3xl font-serif font-bold text-stone-900 group-hover:text-rose-600 transition">SIPUTRA Tarung Redesign</h3>
+            <p class="text-stone-700 text-sm sm:text-base font-normal leading-relaxed">A comprehensive UX overhaul aimed at restructuring complex data hierarchies and creating a modern, accessible interface for government platform users.</p>
+            <div class="pt-2 sm:pt-4">
+              <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-rose-600 group-hover:text-rose-700">
+                View Case Study <span class="ml-1 group-hover:translate-x-1.5 transition-transform">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/barakahos.html" class="block p-6 sm:p-10 rounded-3xl bg-white border border-rose-100 hover:shadow-xl hover:border-rose-300 transition duration-500 group cursor-pointer">
+          <div class="max-w-3xl space-y-3 sm:space-y-4">
+            <span class="text-xs font-mono font-bold text-rose-500 bg-rose-50 px-2.5 py-1 rounded inline-block">03 — Barakahos</span>
+            <div class="flex gap-2 text-xs font-bold text-stone-500 uppercase tracking-wider">
+              <span class="text-rose-600">UI/UX Design</span> · <span>Competition</span>
+            </div>
+            <h3 class="text-xl sm:text-3xl font-serif font-bold text-stone-900 group-hover:text-rose-600 transition">Barakahos Mobile Concept</h3>
+            <p class="text-stone-700 text-sm sm:text-base font-normal leading-relaxed">An award-winning interface concept focusing on intuitive navigation, visual hierarchy, and seamless user interaction flow.</p>
+            <div class="inline-block bg-amber-100/80 border border-amber-300 text-amber-900 text-xs px-3 py-1 sm:px-4 sm:py-1.5 rounded-full font-bold shadow-sm">
+              🏆 2nd Place — HIMASI UMRI Design Competition
+            </div>
+            <div class="pt-2 sm:pt-4">
+              <span class="inline-flex items-center text-xs font-bold uppercase tracking-wider text-rose-600 group-hover:text-rose-700">
+                View Project <span class="ml-1 group-hover:translate-x-1.5 transition-transform">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 sm:mb-16">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md">Experience</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3">Where I've learned by doing.</h2>
+      </div>
+      <div class="space-y-10 sm:space-y-12 max-w-3xl border-l-2 border-rose-200 pl-5 sm:pl-8">
+        
+        <div class="relative">
+          <div class="absolute -left-[27px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-rose-500 ring-4 ring-rose-100"></div>
+          <h3 class="text-lg sm:text-2xl font-serif font-bold text-stone-900">UI/UX & Web Development Intern</h3>
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-2.5 py-1 rounded inline-block mt-1">Pemda PUPR Tulungagung</span>
+          <p class="text-stone-700 mt-2 sm:mt-3 text-sm sm:text-base font-normal leading-relaxed">Collaborated on redesigning municipal platforms, creating component systems, and implementing responsive layouts for optimal usability.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-[27px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-rose-300 ring-4 ring-rose-50"></div>
+          <h3 class="text-lg sm:text-2xl font-serif font-bold text-stone-900">Head of Internal Division</h3>
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-600 bg-stone-100 px-2.5 py-1 rounded inline-block mt-1">UKM FORDI MAPELAR — Universitas Brawijaya</span>
+          <p class="text-stone-700 mt-2 sm:mt-3 text-sm sm:text-base font-normal leading-relaxed">Led organizational communications, managed internal workflow structures, and coordinated cross-functional student teams.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-[27px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-rose-300 ring-4 ring-rose-50"></div>
+          <h3 class="text-lg sm:text-2xl font-serif font-bold text-stone-900">TechCareer Seminar — Organizing Committee</h3>
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-600 bg-stone-100 px-2.5 py-1 rounded inline-block mt-1">Event Management</span>
+          <p class="text-stone-700 mt-2 sm:mt-3 text-sm sm:text-base font-normal leading-relaxed">Managed event planning, branding materials, and technical logistics for a university-wide tech career seminar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="py-16 sm:py-24 bg-[#FAF6F4] border-t border-rose-100 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 sm:mb-16">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-100/70 px-3 py-1 rounded-md">Credentials</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3">Licenses & Certifications</h2>
+        <p class="text-stone-700 font-normal mt-2 text-sm sm:text-base">Officially accredited national proficiency certifications.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-rose-100 shadow-sm hover:shadow-md transition duration-300">
+          
+          <div class="w-full h-[320px] sm:h-[380px] rounded-2xl overflow-hidden bg-stone-100 mb-6 border border-stone-200/60 relative">
+            <iframe 
+              src="https://drive.google.com/file/d/1hYz3EFcL4lD9Bugo2lDN7aWK69AeXG9M/preview" 
+              class="w-full h-full border-0 rounded-2xl"
+              allow="autoplay">
+            </iframe>
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full border border-rose-200/50">
+                🇮🇩 BNSP Certified
+              </span>
+              <span class="text-xs font-mono font-semibold text-stone-400">Standard SKKNI</span>
+            </div>
+
+            <h3 class="text-xl font-serif font-bold text-stone-900">Sertifikasi Profesi UI/UX Designer / Web Developer</h3>
+            <p class="text-xs font-bold text-stone-500">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+            
+            <p class="text-stone-700 text-xs sm:text-sm font-normal leading-relaxed pt-1">
+              Diakui secara nasional atas kompetensi dalam merancang antarmuka pengguna, pemetaan riset pengguna, serta eksekusi standar teknis web.
+            </p>
+
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Status: <strong class="text-emerald-600">Active</strong></span>
+              <a href="https://drive.google.com/file/d/1hYz3EFcL4lD9Bugo2lDN7aWK69AeXG9M/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-sans font-bold hover:underline flex items-center gap-1">
+                <span>Buka Tab Baru (PDF)</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 sm:mb-16">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md">Tools & Skills</span>
+        <h2 class="text-2xl sm:text-4xl font-serif font-bold text-stone-900 mt-3">Tools I use to bring ideas to life.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 shadow-sm">
+          <h3 class="text-lg font-serif font-bold text-stone-900 mb-4 pb-2 border-b-2 border-rose-200">Design</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-medium">
+            <span class="px-3.5 py-2 rounded-xl bg-rose-100 text-rose-800 font-bold border border-rose-200">Figma</span>
+            <span class="px-3.5 py-2 rounded-xl bg-rose-100 text-rose-800 font-bold border border-rose-200">Canva</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Wireframing</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Prototyping</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">User Persona</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Empathy Map</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">User Research</span>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 shadow-sm">
+          <h3 class="text-lg font-serif font-bold text-stone-900 mb-4 pb-2 border-b-2 border-rose-200">Development</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-medium">
+            <span class="px-3.5 py-2 rounded-xl bg-rose-100 text-rose-800 font-bold border border-rose-200">Tailwind CSS</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">HTML5</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">CSS3</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">JavaScript</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">PHP</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Laravel</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Vue.js</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">MySQL</span>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF6F4] border border-rose-100 shadow-sm">
+          <h3 class="text-lg font-serif font-bold text-stone-900 mb-4 pb-2 border-b-2 border-rose-200">Workflow & Tools</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-medium">
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Git</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">GitHub</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">VS Code</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Postman</span>
+            <span class="px-3.5 py-2 rounded-xl bg-white text-stone-800 border border-stone-200">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 sm:py-24 bg-stone-900 text-white px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="text-xs font-bold text-rose-400 uppercase tracking-widest bg-stone-800/80 px-3 py-1 rounded-md border border-stone-700/80 shadow-sm">Contact</span>
+      
+      <h2 class="text-3xl sm:text-5xl font-serif font-bold mt-4 mb-4">Let's create something <span class="text-rose-400 italic">meaningful</span>.</h2>
+      <p class="text-stone-300 font-normal text-base sm:text-lg mb-8 max-w-xl mx-auto">
+        Feel free to reach out if you'd like to discuss a project, collaboration, or just say hello!
+      </p>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amaandaaa.rmdh@gmail.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 text-xs font-bold uppercase tracking-wider text-stone-900 bg-white rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-8 bg-stone-950 text-stone-500 text-xs text-center border-t border-stone-800/60">
+    <p>© Amanda. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PintarUjian — Case Study by Amanda</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#FAF6F4] text-stone-700 antialiased selection:bg-rose-200 selection:text-rose-900 relative overflow-x-hidden">
+
+  <!-- Ambient Light Effect -->
+  <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-rose-200/40 via-pink-100/30 to-amber-100/20 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+
+  <!-- Navbar / Back Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/90 backdrop-blur-md border-b border-rose-100/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="../index.html" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-stone-700 hover:text-rose-600 transition">
+        <span>&larr;</span> Back to Home
+      </a>
+      <a href="../index.html" class="text-xl font-bold tracking-tight text-stone-900 font-serif">Amanda<span class="text-rose-500">.</span></a>
+    </div>
+  </nav>
+
+  <!-- Case Study Header -->
+  <header class="pt-36 pb-8 px-6 max-w-4xl mx-auto text-center">
+    <span class="text-xs font-mono font-bold text-rose-500 bg-rose-100/80 px-3 py-1 rounded-full uppercase tracking-wider">Case Study — 01</span>
+    <h1 class="text-4xl sm:text-6xl font-serif font-bold text-stone-900 mt-4 leading-tight">PintarUjian</h1>
+    <p class="text-lg sm:text-xl text-rose-600 font-medium mt-2">Web-based Try Out & Practice System</p>
+  </header>
+
+  <!-- HIGHLIGHT DOCUMENTATION GALLERY (FOTO DOKUMENTASI DI ATAS) -->
+  <section class="max-w-5xl mx-auto px-6 mb-12">
+    <div class="rounded-3xl overflow-hidden border border-rose-200 shadow-2xl bg-white p-3 sm:p-4">
+      <img 
+        src="../images/pintarujian-hero.png" 
+        alt="PintarUjian Highlight Documentation" 
+        class="w-full h-auto max-h-[500px] object-cover rounded-2xl"
+        onerror="this.src='https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop'"
+      />
+      <p class="text-xs sm:text-sm text-stone-500 italic text-center mt-3 font-medium">
+        Dokumentasi Utama: Antarmuka Platform PintarUjian
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Overview Grid (Role & Tools) -->
+  <section class="max-w-4xl mx-auto px-6 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-white/80 rounded-3xl border border-rose-100 shadow-sm text-sm">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold shrink-0">
+          👤
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">My Role</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">UI/UX Designer & Web Developer</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold shrink-0">
+          🛠️
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">Tools</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">Figma · HTML · CSS · PHP · MySQL · Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Content Section -->
+  <main class="max-w-3xl mx-auto px-6 space-y-16 pb-24">
+    
+    <!-- Overview -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Overview</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-4">About the Project</h2>
+      <p class="text-stone-700 leading-relaxed text-base sm:text-lg">
+        PintarUjian is a web-based tryout and practice platform designed for sixth-grade elementary school students. The system helps students practice exams while making it easier for teachers to manage questions and results.
+      </p>
+    </section>
+
+    <!-- The Challenge & The Solution -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Challenge</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Manual Workflow</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          The existing tryout process relied on manual question preparation, paper-based exams, and manual scoring. This made the process time-consuming for both teachers and students.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Solution</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Digital Automation</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          I designed and developed a web-based tryout system with separate roles for administrators, teachers, and students. The system includes question management, online exams, automatic scoring, and result reports.
+        </p>
+      </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Design Process</span>
+      <h2 class="text-2xl font-serif font-bold text-stone-900 mt-3 mb-6">Workflow Step-by-Step</h2>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">01</span>
+          <p class="font-bold text-stone-900 text-sm">Research</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">02</span>
+          <p class="font-bold text-stone-900 text-sm">User Flow</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">03</span>
+          <p class="font-bold text-stone-900 text-sm">Wireframe</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">04</span>
+          <p class="font-bold text-stone-900 text-sm">UI Design</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">05</span>
+          <p class="font-bold text-stone-900 text-sm">Development</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-[#FAF6F4] border border-rose-100">
+          <span class="text-xs font-mono font-bold text-rose-500 block mb-1">06</span>
+          <p class="font-bold text-stone-900 text-sm">Testing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Key Features</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">What Built Into The System</h2>
+      
+      <ul class="space-y-4">
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Question bank management</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Online tryout and practice</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Automatic scoring</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Student result reports</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Admin, teacher, and student roles</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tampilan Per Role (Admin, Guru, Siswa) DENGAN POP-UP / POPUP LIGHTBOX -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">User Interface</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">User Roles Breakdown</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Tampilan Admin -->
+        <div class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-3 flex flex-col justify-between">
+          <div>
+            <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openModal('../images/pintarujian-admin.png', 'Tampilan Admin: Pengelolaan data pengguna, hak akses, dan manajemen sistem.', 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop')">
+              <img 
+                src="../images/pintarujian-admin.png" 
+                alt="Tampilan Admin" 
+                class="w-full h-44 object-cover transition duration-300 group-hover:scale-105"
+                onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop'"
+              />
+              <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1">
+                🔍 Klik untuk memperbesar
+              </div>
+            </div>
+            <h3 class="font-bold text-stone-900 text-base mt-3 text-center">Tampilan Admin</h3>
+            <p class="text-xs text-stone-500 text-center mt-1">Pengelolaan data pengguna, hak akses, dan manajemen sistem.</p>
+          </div>
+        </div>
+
+        <!-- Tampilan Guru -->
+        <div class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-3 flex flex-col justify-between">
+          <div>
+            <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openModal('../images/pintarujian-guru.png', 'Tampilan Guru: Manajemen bank soal, pembuatan jadwal ujian, dan rekap nilai.', 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1000&auto=format&fit=crop')">
+              <img 
+                src="../images/pintarujian-guru.png" 
+                alt="Tampilan Guru" 
+                class="w-full h-44 object-cover transition duration-300 group-hover:scale-105"
+                onerror="this.src='https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1000&auto=format&fit=crop'"
+              />
+              <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1">
+                🔍 Klik untuk memperbesar
+              </div>
+            </div>
+            <h3 class="font-bold text-stone-900 text-base mt-3 text-center">Tampilan Guru</h3>
+            <p class="text-xs text-stone-500 text-center mt-1">Manajemen bank soal, pembuatan jadwal ujian, dan rekap nilai.</p>
+          </div>
+        </div>
+
+        <!-- Tampilan Siswa -->
+        <div class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-3 flex flex-col justify-between">
+          <div>
+            <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openModal('../images/pintarujian-siswa.png', 'Tampilan Siswa: Halaman pengerjaan tryout online, timer, dan riwayat hasil ujian.', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop')">
+              <img 
+                src="../images/pintarujian-siswa.png" 
+                alt="Tampilan Siswa" 
+                class="w-full h-44 object-cover transition duration-300 group-hover:scale-105"
+                onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop'"
+              />
+              <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1">
+                🔍 Klik untuk memperbesar
+              </div>
+            </div>
+            <h3 class="font-bold text-stone-900 text-base mt-3 text-center">Tampilan Siswa</h3>
+            <p class="text-xs text-stone-500 text-center mt-1">Halaman pengerjaan tryout online, timer, dan riwayat hasil ujian.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Tambahan DENGAN POP-UP LIGHTBOX -->
+    <section>
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Gallery</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">Interface & Process Screenshots</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-2">
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openModal('../images/pintarujian-mockup.png', 'Halaman Tryout Online', 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop')">
+            <img 
+              src="../images/pintarujian-mockup.png" 
+              alt="Tampilan Soal Ujian" 
+              class="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
+              onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop'"
+            />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1">
+              🔍 Klik untuk memperbesar
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 italic text-center py-2">Halaman Tryout Online</p>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-stone-200 shadow-sm bg-white p-2">
+          <div class="relative group cursor-pointer overflow-hidden rounded-xl" onclick="openModal('../images/pintarujian-process.png', 'Dashboard Laporan & Management', 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1000&auto=format&fit=crop')">
+            <img 
+              src="../images/pintarujian-process.png" 
+              alt="Dashboard Rekap Nilai" 
+              class="w-full h-48 object-cover transition duration-300 group-hover:scale-105"
+              onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1000&auto=format&fit=crop'"
+            />
+            <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1">
+              🔍 Klik untuk memperbesar
+            </div>
+          </div>
+          <p class="text-xs text-stone-500 italic text-center py-2">Dashboard Laporan & Management</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Result & What I Learned -->
+    <section class="space-y-6">
+      <div class="p-8 rounded-3xl bg-rose-50/70 border border-rose-200">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Final Result 🚀</h3>
+        <p class="text-stone-700 text-sm leading-relaxed">
+          PintarUjian provides a more structured digital tryout experience while simplifying exam management and scoring for teachers.
+        </p>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">What I Learned 💡</h3>
+        <p class="text-stone-700 text-sm leading-relaxed">
+          This project helped me understand how to translate user needs into a functional interface and taught me how design decisions can directly affect the usability of an educational system.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation Next Project -->
+  <section class="border-t border-rose-200 py-12 bg-white px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Next Case Study</p>
+    <a href="siputra-tarung.html" class="text-2xl font-serif font-bold text-stone-900 hover:text-rose-600 transition">
+      SIPUTRA Tarung Redesign &rarr;
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-stone-950 border-t border-stone-900 px-6 text-stone-400 text-xs font-medium text-center">
+    © 2026 Amanda. Designed with purpose.
+  </footer>
+
+  <!-- MODAL / POP-UP LIGHTBOX ELEMENT -->
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300" onclick="closeModal()">
+    <div class="relative max-w-5xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl border border-stone-200" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-stone-900/70 hover:bg-stone-900 text-white rounded-full flex items-center justify-center text-lg font-bold transition">
+        ✕
+      </button>
+      <!-- Modal Content Image -->
+      <div class="max-h-[80vh] overflow-y-auto bg-stone-100 flex items-center justify-center p-2">
+        <img id="modalImage" src="" alt="Popup Preview" class="max-w-full h-auto max-h-[75vh] object-contain rounded-lg">
+      </div>
+      <!-- Modal Caption -->
+      <div class="p-4 bg-white text-center border-t border-stone-100">
+        <p id="modalCaption" class="text-sm font-semibold text-stone-800"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT UNTUK FUNGSI POP-UP -->
+  <script>
+    function openModal(imageSrc, captionText, fallbackSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const modalCap = document.getElementById('modalCaption');
+
+      modalImg.onerror = function() {
+        if (fallbackSrc) {
+          this.src = fallbackSrc;
+        }
+      };
+      
+      modalImg.src = imageSrc;
+      modalCap.textContent = captionText;
+      
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Disable background scroll when modal open
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto'; // Re-enable background scroll
+    }
+
+    // Close on Escape key press
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
