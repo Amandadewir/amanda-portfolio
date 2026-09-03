@@ -20,6 +20,7 @@
 
   <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[300px] sm:w-[700px] h-[300px] sm:h-[450px] bg-gradient-to-tr from-rose-200/40 via-pink-100/30 to-amber-100/20 blur-[90px] sm:blur-[120px] pointer-events-none -z-10 rounded-full"></div>
 
+  <!-- NAVBAR -->
   <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/90 backdrop-blur-md border-b border-rose-100/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
       <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight text-stone-900 font-serif">
@@ -108,11 +109,11 @@
         <div class="flex flex-wrap gap-3 sm:gap-4">
           <a href="#projects" class="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-stone-900 text-white font-bold text-xs uppercase tracking-wider hover:bg-rose-600 transition-all duration-300 shadow-lg shadow-stone-900/10">Explore Portfolio</a>
           
-          <!-- TOMBOL DOWNLOAD CV (Opsi Google Drive / Jalur File) -->
-          <!-- Gantilah LINK_GOOGLE_DRIVE_ANDA jika menggunakan Google Drive, atau gunakan "CV_Amanda.pdf" jika file sudah sejajar dengan index.html -->
-          <a href="CV_Amanda.pdf" download="CV_Amanda.pdf" target="_blank" class="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white border-2 border-rose-200 text-stone-900 font-bold text-xs uppercase tracking-wider hover:bg-rose-50 transition-all duration-300 shadow-sm">Download CV</a>
+          <a href="./public/cv-amanda.pdf" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full border border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-sm">
+            Download CV
+          </a>
         </div>
-      </div> <!-- Tag Penutup Kolom Kiri -->
+      </div>
 
       <!-- KOLOM KANAN HERO (FOTO) -->
       <div class="lg:col-span-5 flex justify-center mt-6 lg:mt-0">
@@ -122,10 +123,9 @@
           <div class="relative bg-white/80 backdrop-blur-md rounded-[2.5rem] p-3 sm:p-4 shadow-2xl border border-white">
             <div class="aspect-[4/5] rounded-[2rem] overflow-hidden relative group bg-rose-50">
               <img 
-                src="public/foto-amanda.jpeg" 
-                 alt="Amanda - UI/UX Designer"
-                 class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                 onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop'"
+                src="./public/foto-amanda.jpeg" 
+                alt="Amanda - UI/UX Designer"
+                class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
               />
               
               <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/90 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-rose-100 shadow-lg">
@@ -145,6 +145,7 @@
     </div>
   </section>
 
+  <!-- STATS SECTION -->
   <section class="py-8 sm:py-12 bg-white/60 border-y border-rose-100/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
       <div>
@@ -166,6 +167,7 @@
     </div>
   </section>
 
+  <!-- ABOUT SECTION -->
   <section id="about" class="py-16 sm:py-24 bg-white border-b border-rose-100 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-8 md:gap-12 items-start">
       <div class="md:col-span-5">
@@ -188,6 +190,7 @@
     </div>
   </section>
 
+  <!-- PHILOSOPHY SECTION -->
   <section id="philosophy" class="py-16 sm:py-24 px-4 sm:px-6 bg-[#FAF6F4]">
     <div class="max-w-6xl mx-auto">
       <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-100/70 px-3 py-1 rounded-md">Design Philosophy</span>
@@ -203,6 +206,7 @@
     </div>
   </section>
 
+  <!-- SERVICES SECTION -->
   <section id="services" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
       <div class="mb-12 sm:mb-16">
@@ -234,6 +238,7 @@
     </div>
   </section>
 
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="py-16 sm:py-24 bg-[#FAF6F4] px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
       <div class="mb-12 sm:mb-16">
@@ -297,6 +302,7 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE SECTION -->
   <section id="experience" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
       <div class="mb-12 sm:mb-16">
@@ -330,6 +336,7 @@
     </div>
   </section>
 
+  <!-- CERTIFICATIONS SECTION -->
   <section id="certifications" class="py-16 sm:py-24 bg-[#FAF6F4] border-t border-rose-100 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
       <div class="mb-12 sm:mb-16">
@@ -379,6 +386,7 @@
     </div>
   </section>
 
+  <!-- SKILLS SECTION -->
   <section id="skills" class="py-16 sm:py-24 bg-white border-t border-rose-100 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
       <div class="mb-12 sm:mb-16">
@@ -427,6 +435,7 @@
     </div>
   </section>
 
+  <!-- CONTACT SECTION -->
   <section id="contact" class="py-16 sm:py-24 bg-stone-900 text-white px-4 sm:px-6 relative overflow-hidden">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -444,6 +453,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="py-8 bg-stone-950 text-stone-500 text-xs text-center border-t border-stone-800/60">
     <p>© Amanda. All rights reserved.</p>
   </footer>
