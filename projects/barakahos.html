@@ -87,12 +87,11 @@
         </div>
 
         <!-- Image Container (Smartphone Screen Aspect Ratio) -->
-        <div class="relative overflow-hidden rounded-[32px] aspect-[9/19.5] bg-stone-100 cursor-pointer" onclick="openModal('../images/barakahos-hero.jpg', 'Dokumentasi Utama Konsep Desain Aplikasi Mobile Barakahos', 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop')">
+        <div class="relative overflow-hidden rounded-[32px] aspect-[9/19.5] bg-stone-100 cursor-pointer" onclick="openModal('../images/barakahos-hero.jpg', 'Dokumentasi Utama Konsep Desain Aplikasi Mobile Barakahos')">
           <img 
             src="../images/barakahos-hero.jpg" 
             alt="Barakahos Mobile UI Concept" 
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop'"
           />
           <div class="absolute inset-0 bg-stone-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-xs font-semibold gap-1 text-center p-4 backdrop-blur-[2px]">
             🔍 Klik untuk memperbesar
@@ -286,31 +285,24 @@
 
   <!-- JAVASCRIPT UNTUK FUNGSI POP-UP LIGHTBOX -->
   <script>
-    function openModal(imageSrc, captionText, fallbackSrc) {
+    function openModal(imageSrc, captionText) {
       const modal = document.getElementById('imageModal');
       const modalImg = document.getElementById('modalImage');
       const modalCap = document.getElementById('modalCaption');
-
-      modalImg.onerror = function() {
-        if (fallbackSrc) {
-          this.src = fallbackSrc;
-        }
-      };
       
       modalImg.src = imageSrc;
       modalCap.textContent = captionText;
       
       modal.classList.remove('hidden');
-      document.body.style.overflow = 'hidden'; // Kunci scroll latar belakang
+      document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
       const modal = document.getElementById('imageModal');
       modal.classList.add('hidden');
-      document.body.style.overflow = 'auto'; // Aktifkan kembali scroll
+      document.body.style.overflow = 'auto';
     }
 
-    // Menutup modal dengan tombol Escape (ESC)
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
         closeModal();
