@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMKM Platform — Case Study by Amanda</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1) translate(-50%, 0); }
+      50% { opacity: 0.7; transform: scale(1.1) translate(-50%, -10px); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-float {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+
+    .animate-ambient-glow {
+      animation: pulseGlow 10s ease-in-out infinite;
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-[#FAF6F4] text-stone-700 antialiased selection:bg-rose-200 selection:text-rose-900 relative overflow-x-hidden">
+
+  <!-- Dynamic Ambient Light Effect -->
+  <div class="fixed top-[-10%] left-1/2 w-[600px] sm:w-[800px] h-[450px] bg-gradient-to-tr from-amber-200/50 via-rose-200/40 to-amber-100/30 blur-[130px] pointer-events-none -z-10 rounded-full animate-ambient-glow"></div>
+
+  <!-- Navbar / Back Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-[#FAF6F4]/80 backdrop-blur-md border-b border-rose-100/80 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="../index.html" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-stone-700 hover:text-rose-600 transition-all transform hover:-translate-x-1">
+        <span>&larr;</span> Back to Home
+      </a>
+      <a href="../index.html" class="text-xl font-bold tracking-tight text-stone-900 font-serif group">
+        Amanda<span class="text-rose-500 inline-block transition-transform duration-300 group-hover:scale-150">.</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Case Study Header -->
+  <header class="pt-36 pb-8 px-6 max-w-4xl mx-auto text-center fade-in-up">
+    <span class="inline-block text-xs font-mono font-bold text-rose-500 bg-rose-100/80 px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm hover:scale-105 transition-transform">
+      Case Study — 04
+    </span>
+    <h1 class="text-4xl sm:text-6xl font-serif font-bold text-stone-900 mt-4 leading-tight">Digitalisasi UMKM Platform</h1>
+    <p class="text-lg sm:text-xl text-rose-600 font-medium mt-2">Web Development & UI/UX Design</p>
+    
+    <!-- Live Badge -->
+    <div class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-rose-100 via-rose-50 to-rose-100 border border-rose-300/80 text-rose-900 text-xs sm:text-sm px-5 py-2 rounded-full font-bold shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+      🚀 Real Business Solution & Interactive Web Platform
+    </div>
+  </header>
+
+  <!-- HERO SECTION: PREVIEW MOCKUP -->
+  <section class="max-w-5xl mx-auto px-6 mb-16 flex flex-col items-center fade-in-up">
+    <div class="animate-float w-full max-w-3xl">
+      <div class="relative bg-stone-900 p-3 rounded-[2.5rem] shadow-2xl ring-1 ring-stone-800/50">
+        <div class="relative overflow-hidden rounded-[2rem] aspect-[16/10] bg-stone-100">
+          <!-- Menggunakan umkm.jpg dari folder images/ di luar folder projects -->
+          <img 
+            src="../images/umkm.png" 
+            alt="UMKM Platform Preview" 
+            class="w-full h-full object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop'"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <p class="text-xs sm:text-sm text-stone-500 italic text-center mt-6 font-medium">
+      Interactive Web Interface & Product Catalog for Local Business
+    </p>
+  </section>
+
+  <!-- Project Overview Grid (Role & Tools) -->
+  <section class="max-w-4xl mx-auto px-6 mb-16 fade-in-up">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-rose-100/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-sm">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100/80 text-rose-600 flex items-center justify-center font-bold shrink-0 shadow-inner">
+          👤
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">My Role</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">Fullstack Web Developer & UI/UX Designer</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-2xl bg-rose-100/80 text-rose-600 flex items-center justify-center font-bold shrink-0 shadow-inner">
+          🛠️
+        </div>
+        <div>
+          <p class="text-xs font-bold text-stone-400 uppercase tracking-wider">Tech Stack & Tools</p>
+          <p class="font-bold text-stone-900 text-base mt-0.5">HTML, Tailwind CSS, JavaScript, PHP / MySQL</p>
+          <!-- LINK KE LIVE WEB PROJECT -->
+          <a href="https://amandadewir.github.io/maklor-vici/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-xs font-bold text-rose-600 hover:text-rose-700 underline underline-offset-4 group">
+            <span>🌐 Visit Live Web Project (Maklor Vici)</span>
+            <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Content Section (English Descriptions) -->
+  <main class="max-w-3xl mx-auto px-6 space-y-16 pb-24">
+    
+    <!-- Overview -->
+    <section class="fade-in-up">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Overview</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-4">About the Project</h2>
+      <p class="text-stone-700 leading-relaxed text-base sm:text-lg">
+        This project focuses on digitalizing micro, small, and medium enterprises (MSMEs / UMKM) by providing an accessible, responsive, and engaging web platform. The primary goal is to help local business owners transition from traditional marketing to digital storefronts, amplifying product reach and streamlining customer engagement.
+      </p>
+    </section>
+
+    <!-- The Challenge & The Solution -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in-up">
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Challenge</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Limited Online Presence</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          Traditional local vendors often struggle with visibility outside their immediate physical neighborhoods, lacking structured digital catalogs and direct online ordering channels.
+        </p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">The Solution</span>
+        <h3 class="text-xl font-serif font-bold text-stone-900 mt-3 mb-3">Structured Digital Catalog</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          Developed a modern, mobile-responsive web platform featuring organized product categorization, interactive clean UI, and seamless integration for customer interactions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="fade-in-up">
+      <span class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-md border border-rose-100">Key Features</span>
+      <h2 class="text-2xl sm:text-3xl font-serif font-bold text-stone-900 mt-3 mb-6">Core Highlights Of The Platform</h2>
+      
+      <ul class="space-y-4">
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Responsive & Mobile-First Design Architecture</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Interactive Product Showcase & Categorization</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Streamlined User Experience with Fast Loading Speeds</span>
+        </li>
+        <li class="flex items-center gap-4 p-4 rounded-2xl bg-white border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 hover:-translate-y-0.5 transition-all duration-300">
+          <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-sm shrink-0">✓</span>
+          <span class="font-semibold text-stone-800 text-base">Direct Customer Connection & Order Workflow</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Final Result & What I Learned -->
+    <section class="space-y-6 fade-in-up">
+      <div class="p-8 rounded-3xl bg-rose-50/80 border border-rose-200 hover:shadow-md transition-shadow duration-300">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">Impact & Result 🚀</h3>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4">
+          Successfully delivered a fully functional web platform that bridges local businesses with digital consumers, elevating overall brand presence and market engagement.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://amandadewir.github.io/maklor-vici/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-xs px-5 py-2.5 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-sm">
+            <span>🌐 Explore Live Website</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white border border-rose-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+        <h3 class="text-xl font-serif font-bold text-stone-900 mb-2">What I Learned 💡</h3>
+        <p class="text-stone-700 text-sm leading-relaxed">
+          Building real-world solutions for local businesses taught me how to balance technical scalability with user-friendly design, ensuring that even non-tech-savvy users can easily navigate and benefit from the digital platform.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navigation Previous Project -->
+  <section class="border-t border-rose-200 py-12 bg-white px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Previous Case Study</p>
+    <a href="barakahos.html" class="text-2xl font-serif font-bold text-stone-900 hover:text-rose-600 transition duration-300 inline-block hover:scale-105">
+      &larr; Barakahos Mobile Concept
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-stone-950 border-t border-stone-900 px-6 text-stone-400 text-xs font-medium text-center">
+    © 2026 Amanda. Designed with purpose.
+  </footer>
+
+</body>
+</html>
